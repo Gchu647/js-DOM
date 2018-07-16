@@ -69,4 +69,21 @@ targetDiv2.appendChild(tempDiv2);
 
 //Final Boss
 /*9. Create your own profile.*/
+var myProfile = document.getElementsByClassName("block3 col-sm-4");
+var profParent = document.createElement("div");
+var myName = document.createElement("div");
+var myPosition = document.createElement("div");
+var myBio = document.createElement("div");
+
+myName.id = "name9";
+myPosition.id = "position9";
+myBio.id = "bio9";
+myName.innerHTML = "Soma Yukihira";
+myPosition.innerHTML = "Chef";
+myBio.innerHTML = " Likes to say, 'It wasn't much', after serving food";
+
+myProfile[2].appendChild(profParent); //It has to be index 2, and why error on index 3?
+profParent.appendChild(myName);
+profParent.appendChild(myPosition);
+profParent.appendChild(myBio);
 
